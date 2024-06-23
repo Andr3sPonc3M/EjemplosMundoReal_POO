@@ -3,12 +3,15 @@
 class Usuario:
     # Representa un usuario en una red social.
 
+    # Inician atributos.
     def __init__(self, nombre, email):
         # Inicializa un nuevo usuario con nombre y email.
         self.nombre = nombre  # Atributo nombre del usuario
         self.email = email  # Atributo email del usuario
         self.publicaciones = []  # Lista para almacenar publicaciones del usuario
+        # Finalizan atributos.
 
+    # Inician métodos.
     def hacer_publicacion(self, contenido):
         # Crea una nueva publicación y la agrega a la lista de publicaciones del usuario.
         publicacion = Publicacion(contenido, self.nombre)
@@ -23,18 +26,6 @@ class Usuario:
     def __str__(self):
         # Devuelve una representación en cadena del usuario.
         return f"Usuario: {self.nombre}, Email: {self.email}"
+        # Finalizan métodos.
 
-
-class Publicacion:
-    # Representa una publicación en la red social.
-
-    def __init__(self, contenido, autor):
-        # Inicializa una nueva publicación con contenido y autor.
-        self.contenido = contenido  # Atributo contenido de la publicación
-        self.autor = autor  # Atributo autor de la publicación
-
-    def __str__(self):
-        # Devuelve una representación en cadena de la publicación.
-        return f"Publicación de {self.autor}: {self.contenido}"
-
-    # Fin del programa.
+# Fin del programa.

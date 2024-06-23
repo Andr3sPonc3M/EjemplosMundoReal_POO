@@ -3,6 +3,7 @@
 class Television:
     # Representa una televisión.
 
+    # Inician atributos.
     def __init__(self, marca, tamaño):
         # Inicializa una nueva televisión con marca y tamaño.
         self.marca = marca  # Atributo marca de la televisión
@@ -10,7 +11,9 @@ class Television:
         self.encendida = False  # Atributo que indica si la TV está encendida
         self.canal = 1  # Atributo canal actual de la televisión
         self.volumen = 10  # Atributo volumen actual de la televisión
+        # Finalizan atributos.
 
+    # Inician métodos.
     def encender(self):
         # Enciende la televisión.
         self.encendida = True
@@ -41,5 +44,6 @@ class Television:
         # Devuelve una representación en cadena de la televisión.
         estado = "encendida" if self.encendida else "apagada"
         return f"Televisión {self.marca} de {self.tamaño} pulgadas, actualmente {estado}"
+        # Finalizan métodos.
 
-    # Fin del programa.
+# Fin del programa.
