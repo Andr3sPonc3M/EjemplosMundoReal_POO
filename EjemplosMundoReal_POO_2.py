@@ -9,7 +9,7 @@ class Usuario:
         self.nombre = nombre  # Atributo nombre del usuario
         self.email = email  # Atributo email del usuario
         self.publicaciones = []  # Lista para almacenar publicaciones del usuario
-        # Finalizan atributos.
+    # Finalizan atributos.
 
     # Inician métodos.
     def hacer_publicacion(self, contenido):
@@ -26,6 +26,6 @@ class Usuario:
     def __str__(self):
         # Devuelve una representación en cadena del usuario.
         return f"Usuario: {self.nombre}, Email: {self.email}"
-        # Finalizan métodos.
+    # Finalizan métodos.
 
 # Fin del programa.

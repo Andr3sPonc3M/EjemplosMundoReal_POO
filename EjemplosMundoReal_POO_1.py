@@ -11,7 +11,7 @@ class Television:
         self.encendida = False  # Atributo que indica si la TV está encendida
         self.canal = 1  # Atributo canal actual de la televisión
         self.volumen = 10  # Atributo volumen actual de la televisión
-        # Finalizan atributos.
+    # Finalizan atributos.
 
     # Inician métodos.
     def encender(self):
@@ -44,6 +44,6 @@ class Television:
         # Devuelve una representación en cadena de la televisión.
         estado = "encendida" if self.encendida else "apagada"
         return f"Televisión {self.marca} de {self.tamaño} pulgadas, actualmente {estado}"
-        # Finalizan métodos.
+    # Finalizan métodos.
 
 # Fin del programa.
